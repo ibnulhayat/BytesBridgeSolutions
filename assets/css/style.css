@@ -1455,7 +1455,7 @@ section {
 @media (max-width: 575px) {
   .portfolio-details {
     padding-top: 22%;
-}
+  }
 }
 /*--------------------------------------------------------------
 # Testimonials
@@ -1581,19 +1581,26 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
+.teams .teams-carousel,
+.teams .teams-slider {
+  overflow: hidden;
+}
+
+.teams .member {
+  box-sizing: content-box;
+  min-height: 320px;
   text-align: center;
   margin-bottom: 20px;
   padding: 30px 20px;
   background: #fff;
 }
 
-.team .member img {
+.teams .member img {
   max-width: 100%;
   margin: 0 0 30px 0;
 }
 
-.team .member h4 {
+.teams .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
@@ -1605,29 +1612,45 @@ section {
   font-size: 13px;
 }
 
-.team .member p {
+.teams .member p {
   padding-top: 10px;
   font-size: 14px;
   font-style: italic;
   color: #aaaaaa;
 }
 
-.team .member .social {
+.teams .member .social {
   margin-top: 15px;
 }
 
-.team .member .social a {
+.teams .member .social a {
   color: #919191;
   transition: 0.3s;
 }
 
-.team .member .social a:hover {
+.teams .member .social a:hover {
   color: #16df7e;
 }
 
-.team .member .social i {
+.teams .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+.teams .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.teams .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #3ec6c9;
+}
+
+.teams .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #3ec6c9;
 }
 
 /*--------------------------------------------------------------
